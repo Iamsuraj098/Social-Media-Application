@@ -1,0 +1,73 @@
+.LeftBar {
+    width: 12%;
+    height: 85vh;
+    background-color: #f8f9fa;
+    /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); */
+    border-right: 2px solid rgb(183, 183, 183);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px 0 0 10px; 
+  
+    .top, .bottom {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .top {
+      border-bottom: 1px solid #cacaca;
+      padding-bottom: 20px;
+    }
+  
+    .bottom {
+      padding-top: 20px;
+    }
+  
+    .user, .friend, .groups, .share, .setting {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 5px;
+      border-radius: 5px;
+      transition: background-color 0.1s ease, box-shadow 0.1s ease, transform 0.1s ease;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #e9ecef;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+      }
+  
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+        transition: transform 0.3s ease;
+  
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+  
+      span {
+        font-size: 1.3vw;
+        font-weight: 500;
+        color: #333;
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: #002fff;
+        }
+      }
+    }
+  
+    .share {
+      padding-top: 20px;
+    }
+  
+    .setting {
+      padding-top: 20px;
+    }
+  }
+  

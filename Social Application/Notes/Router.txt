@@ -1,0 +1,12 @@
+React Router: 
+We move from one page to another or open a new component in same page without rendering whole page.
+Client side rendering. 
+
+for installing in router: npm install react-router-dom
+"Switch" is removed from new version of router at place of it we use "Routes"
+
+Here we use: 
+BrowserRouter
+Routes
+Route
+Link

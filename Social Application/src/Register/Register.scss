@@ -1,0 +1,114 @@
+// body, html {
+//     margin: 0;
+//     padding: 0;
+//     height: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: #f0f0f0; /* Optional: Background color for the whole page */
+// }
+
+.Register {
+    width: 100%;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.Card2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* Optional: Background color for the card */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for the card */
+    max-width: 60%;
+    min-width: 40%;
+    height: 50vh; /* Increased height for Card */
+}
+
+.box12, .box22 {
+    flex: 1;
+    padding: 20px;
+    height: 100%;
+}
+
+.box12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("register.jpg");
+    background-size: cover;
+    background-position: center;
+    color: rgb(244, 244, 244);
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.box12 span{
+    margin-bottom: 2%;
+}
+
+.box12 h1{
+    text-align: center;
+    font-size: 3vw;
+}
+
+.box22 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #eeeeee; /* Optional: Background color for box2 */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.box22 form {
+    display: flex;
+    flex-direction: column;
+}
+
+.box22 input {
+    font-size: 1.1vw;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.box22 button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    width: 60%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: translateY(-2px);
+}
+
+button:active {
+    background: linear-gradient(135deg, #003f7f, #0056b3); 
+    transform: translateY(0);
+}
+
