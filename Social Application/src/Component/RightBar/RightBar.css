@@ -1,0 +1,107 @@
+.right-bar {
+    width: 35%;
+    height: 86.6vh;
+    padding: 20px;
+    background-color: #b0b0b0;
+}
+
+.right-bar-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.friend-requests {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.friend-request-item {
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #dadada;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+}
+
+.friend-info {
+    display: flex;
+    align-items: center;
+}
+
+.friend-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.friend-info span {
+    font-weight: 500;
+    color: #333;
+}
+
+.follow-btn,
+.reject-btn {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.follow-btn {
+    background-color: blue;
+}
+
+.reject-btn {
+    background-color: red;
+}
+
+.online-friends {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.online-friend-item {
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #dadada;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.online-friend-info {
+    display: flex;
+    align-items: center;
+}
+
+.online-friend-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.online-friend-info span {
+    font-weight: 500;
+    color: #333;
+}
+
+.online-status {
+    background-color: green;
+    width: 1vw;
+    height: 2vh;
+    border-radius: 50%;
+}

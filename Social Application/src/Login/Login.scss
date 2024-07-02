@@ -88,7 +88,7 @@
     cursor: pointer;
 }
 
-button {
+.box21 button {
     width: 60%;
     padding: 12px 20px;
     background: linear-gradient(135deg, #007BFF, #0056b3);
@@ -101,12 +101,35 @@ button {
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
+.box21 button:hover {
     background: linear-gradient(135deg, #0056b3, #003f7f);
     transform: translateY(-2px);
 }
 
-button:active {
+.box21 button:active {
+    background: linear-gradient(135deg, #003f7f, #0056b3); 
+    transform: translateY(0);
+}
+
+.box11 button {
+    width: 60%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.box11 button:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: translateY(-2px);
+}
+
+.box11 button:active {
     background: linear-gradient(135deg, #003f7f, #0056b3); 
     transform: translateY(0);
 }

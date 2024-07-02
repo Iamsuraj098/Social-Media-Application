@@ -10,3 +10,26 @@ BrowserRouter
 Routes
 Route
 Link
+
+Creating a simple backend for a social media application involves implementing essential features such as user authentication, profile management, posting content, and fetching data. Here's a basic outline of the requirements:
+
+1. User Authentication
+Registration: Allow users to create an account.
+Login: Allow users to log in with their credentials.
+JWT: Use JSON Web Tokens for authentication.
+2. User Profiles
+Profile Data: Store and manage user profile information such as username, email, profile picture, and bio.
+Update Profile: Allow users to update their profile information.
+3. Posts
+Create Post: Allow users to create posts with text, images, or videos.
+Fetch Posts: Fetch posts to display on the user's feed.
+Like/Comment: Allow users to like and comment on posts.
+4. Followers/Following
+Follow/UnFollow: Allow users to follow or unFollow other users.
+Fetch Followers/Following: Fetch lists of followers and following for a user.
+5. Basic Security
+Input Validation: Validate user input to prevent SQL injection and other attacks.
+Password Hashing: Hash user passwords before storing them in the database.
+6. Basic Error Handling
+Error Responses: Send meaningful error messages to the client.
+Logging: Log errors for debugging purposes.
