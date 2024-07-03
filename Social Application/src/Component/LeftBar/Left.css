@@ -1,12 +1,9 @@
 .LeftBar {
-    width: 20%;
-    height: 86.6vh;
-    background-color: #f8f9fa;
-    display: flex;
-    flex-direction: column;
     padding: 20px;
-    border-radius: 10px 0 0 10px; 
-  
+    width: 15%;
+    position: sticky;
+    background-color: themed("bgSoft");
+
     .top, .bottom {
       display: flex;
       flex-direction: column;

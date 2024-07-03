@@ -33,7 +33,7 @@ export default function Stories() {
   return (
     <div className="stories">
         {data.map(story=>(
-            <div className="story">
+            <div className="story" key={story.id}>
                 <img src={story.image} alt="" />
                 <span>{story.name}</span>
             </div>

@@ -1,0 +1,99 @@
+UseContext: 
+
+Why we required useContext? : 
+Lets take an example, 
+    component1 -> component2 -> component3 -> component4
+if component1 want send any data to component4 then it use the "props" and send data via component2, 3 after that it reaches the component4.
+
+To remove the hierarchy of data pass and to pass data direct from component1 to component4. 
+UseContext comes in existence.
+
+"""React Context API allows you to pass data at different level of the component tree, without passing props to every level."""
+
+To use UseContext their are few steps: 
+1. createContext() -> here we create the UseContext.
+2. Provider -> this enables to other use the data.
+3. consumer -> it catch or take the data which provided by "provider"
+
+Code:
+
+App.jsx
+
+import React from "react";
+import { createContext } from "react";
+import ComA from "./ComA";
+
+const FirstNameContext = createContext();
+const LastNameContext = createContext();
+
+function App() {
+  return (
+    <FirstNameContext.Provider value={"My Friend"}>
+      <LastNameContext.Provider value={"Live Long"}>
+      <ComA />
+      </LastNameContext.Provider>
+    </FirstNameContext.Provider>
+  );
+}
+
+export default App;
+export { FirstNameContext, LastNameContext };
+----------------------------------------------------------------
+ComA.jsx
+
+import React from 'react'
+import ComB from './ComB';
+
+export default function comA() {
+  return <ComB/>;
+}
+------------------------------------------------------------
+ComB.jsx
+import React from 'react'
+import { useContext } from 'react';
+// import ComC from './ComC'
+import { FirstNameContext, LastNameContext } from "./App";
+
+export default function comB() {
+  // we create a variable of useContext which take the value of useContext Type.
+  // here code is same as in ComC but diiference it convert into very small.
+  const first = useContext(FirstNameContext);
+  const second = useContext(LastNameContext);
+
+  return <h1>{first} {second}</h1>;
+
+  // return <ComC/>
+}
+
+----------------------------------------------------------------
+ComC.jsx
+import React from "react";
+import { FirstNameContext, LastNameContext } from "./App";
+
+const comC = () => {
+    return (
+        // For single context
+        // <>
+        //     <FirstNameContext.Consumer>{(fname) => {
+        //         return <h1>Hello world {fname} {fname2}</h1>;
+        //     }}</FirstNameContext.Consumer>
+        // </>
+
+        // for multiple context: 
+        <>
+            <FirstNameContext.Consumer>{(fname) => {
+                return (
+                    <>
+                        <LastNameContext.Consumer>{(lname) => {
+                            return <h1>Hello world {fname} {lname}</h1>;
+                        }}</LastNameContext.Consumer>
+                    </>
+                )
+            }}</FirstNameContext.Consumer>
+        </>
+
+        // to avoid these difficulties we can write in few line to see it ComB.jsx file.
+    );
+}
+
+export default comC;
