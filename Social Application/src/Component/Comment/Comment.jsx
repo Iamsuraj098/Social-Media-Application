@@ -1,8 +1,8 @@
 import React from 'react'
 import "./Comment.css"
-import { useContext } from 'react';
+// import { useContext } from 'react';
 const Comments = () => {
-    const { currentUser } = useContext(AuthContext);
+    // const { currentUser } = useContext(AuthContext);
     const comments = [
       {
         id: 1,
@@ -24,7 +24,7 @@ const Comments = () => {
     return (
       <div className="comments">
         <div className="write">
-          <img src={currentUser.profilePic} alt="" />
+          <img src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" /> 
           <input type="text" placeholder="write a comment" />
           <button>Send</button>
         </div>

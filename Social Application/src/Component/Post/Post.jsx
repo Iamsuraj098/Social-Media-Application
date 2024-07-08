@@ -5,7 +5,7 @@ import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlin
 import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
 import TextsmsOutlinedIcon from "@mui/icons-material/TextsmsOutlined";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
-import { Link } from '@mui/material';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Comments from "../Comment/Comment";
 
@@ -22,7 +22,7 @@ export default function Post({ post }) {
           <div className="userinfo">
             <img src={`${post.profilePic}`} alt="image" />
             <Link to={`/Profile/${post.userId}`} style={{ textDecoration: "none", color: "inherit" }}>
-              <span>{post.name}</span>
+              <span>{post.name}</span> 
               <span>1min ago</span>
             </Link>
           </div>
