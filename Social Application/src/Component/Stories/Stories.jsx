@@ -10,7 +10,7 @@ export default function Stories() {
             image: "https://help.apple.com/assets/65382CE37BB3E2BCF80ADABA/65382CE57BB3E2BCF80ADAC0/en_US/dbb0631358aad57b8b57484c2a476c7e.png"
         },
         {
-            id: 2,
+            id: 2, 
             name: "Shayam",
             image: "https://help.apple.com/assets/65382CE37BB3E2BCF80ADABA/65382CE57BB3E2BCF80ADAC0/en_US/dbb0631358aad57b8b57484c2a476c7e.png"
         },

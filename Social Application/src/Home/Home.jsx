@@ -1,14 +1,21 @@
 import React from 'react'
-import "./Home.css"
-import Stories from '../Component/Stories/Stories'
-import Post from '../Component/Post/Post'
-import Posts from '../Component/Posts/Posts'
 
 export default function Home() {
-  return (
-    <div className="home">
-      <Stories/>
-      <Posts/>
-    </div>
-  )
+    return (
+        <>
+            <div className="container">
+                <div className="top">
+                    <img src="" alt="logo" />
+                    <button>Login</button>
+                    <button>Register</button>
+                </div>
+                <div className="mid">
+                    
+                </div>
+                <div className="bottom">
+
+                </div>
+            </div>
+        </>
+    )
 }

@@ -6,7 +6,7 @@ import Login from "./Login/Login"
 import LeftBar from './Component/LeftBar/LeftBar.jsx';
 import RightBar from './Component/RightBar/RightBar.jsx';
 import Navbar from './Component/Navbar/Navbar.jsx';
-import Home from './Home/Home.jsx';
+import Dashboard from './Dashboard/Dashboard.jsx';
 import Profile from './Profile/Profile.jsx';
 
 export default function App() {
@@ -39,7 +39,7 @@ export default function App() {
             children: [
                 {
                     path: "/",
-                    element: <Home />
+                    element: <Dashboard />
                 },
                 {
                     path: "/profile/:id",
