@@ -8,6 +8,7 @@ import RightBar from './Component/RightBar/RightBar.jsx';
 import Navbar from './Component/Navbar/Navbar.jsx';
 import Dashboard from './Dashboard/Dashboard.jsx';
 import Profile from './Profile/Profile.jsx';
+import Home from './Home/Home.jsx';
 
 export default function App() {
 
@@ -27,15 +28,15 @@ export default function App() {
 
     const ProtectedRoute = ({ children }) => {
         if (!currentUser) {
-            return <Navigate to="/login" />
+            return <Navigate to="/home" />
         }
         return children;
     }
     const router = createBrowserRouter([
         {
             path: "/",
-            // element: <ProtectedRoute><Layout /></ProtectedRoute>,
-            element: <Layout/>,
+            element: <ProtectedRoute><Layout /></ProtectedRoute>,
+            // element: <Layout/>,
             children: [
                 {
                     path: "/",
@@ -54,6 +55,10 @@ export default function App() {
         {
             path: "/login",
             element: <Login />,
+        },
+        {
+            path: "/home",
+            element: <Home />,
         },
     ]);
 
